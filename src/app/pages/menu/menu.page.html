@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-button fill="clear" class="button" (click)="Voltar()">
+    <ion-icon name="arrow-back"></ion-icon>Voltar
+  </ion-button>
+  <ion-title *ngIf="Nome">Bem vindo {{Nome}}!</ion-title>
+</ion-header>
+
+<ion-content>
+  <div class="content">
+
+
+    <div class="menu">
+
+      <button class="ion-button" (click)="chat()">Duvidas Frequentes</button>
+      <button class="ion-button" (click)="products()">Lista de Produtos</button>
+      <button class="ion-button" (click)="orders()">Ordem de Pedidos</button>
+      <button class="ion-button" (click)="card()">Contato</button>
+
+    </div>
+  </div>
+</ion-content>

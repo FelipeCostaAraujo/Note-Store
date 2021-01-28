@@ -1,0 +1,7 @@
+{
+  "name": "MinhasApis",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

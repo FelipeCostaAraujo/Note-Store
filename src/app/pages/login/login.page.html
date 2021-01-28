@@ -1,0 +1,32 @@
+<ion-content>
+  <ion-card class="card">
+      <ion-card-header translucent='true'  class="card-header">
+          <ion-card-subtitle>Felipe Node-Str</ion-card-subtitle>
+          <ion-card-title>Bem Vindo</ion-card-title>
+        </ion-card-header>
+        <div class="card-box">
+            <ion-item lines="none">
+                <ion-label position="stacked">Email:</ion-label>
+                <ion-input [(ngModel)]="Email" placeholder="Digite seu email" type="email"></ion-input>
+              </ion-item>
+              <ion-item lines="none">
+                <ion-label position="stacked">Senha:</ion-label>
+                <ion-input [(ngModel)]="Senha" placeholder="Digite sua senha" type="password"></ion-input>
+              </ion-item>
+              <ion-item lines="none">
+                  <ion-toggle [(ngModel)]="toggleSelect" class="toogle" slot="end"></ion-toggle>
+                  <ion-label>Lembrar a Senha</ion-label>
+                </ion-item>
+              <div class="card-button">
+                  <ion-button class="button" size="default" (click)="doLogin(Email,Senha)">Entrar</ion-button>
+              </div>
+        </div>
+    
+  </ion-card>
+
+</ion-content>
+<ion-footer>
+  <div class="rodape">
+      <ion-button class="button" fill="clear" (click)="register()">Cadastre-se</ion-button>
+  </div>
+</ion-footer>

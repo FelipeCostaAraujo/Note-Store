@@ -1,0 +1,36 @@
+<ion-header>
+  <ion-button fill="clear" class="button" (click)="Voltar()">
+    <ion-icon name="arrow-back"></ion-icon>Voltar
+  </ion-button>
+  <ion-title>
+    Lista de Produtos
+  </ion-title>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-card  *ngFor="let item of items">
+        <ion-item>
+            <ion-label>ID: {{item._id}}</ion-label>
+          </ion-item>
+      
+          <ion-item>
+            <ion-label>Nome: {{item.title}}</ion-label>
+          </ion-item>
+      
+          <ion-item>
+            <ion-label>Preço: {{item.price}}</ion-label>
+          </ion-item>
+      
+          <ion-item>
+            <ion-label>Tags: {{item.tags}}</ion-label>
+          </ion-item>
+      
+          <ion-item>
+            <img [src]="item.image" />
+          </ion-item>
+    </ion-card>
+   
+
+  </ion-list>
+</ion-content>

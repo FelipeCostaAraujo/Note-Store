@@ -1,0 +1,20 @@
+
+
+.header{
+    background: #3880ff;
+
+    .button{
+        --color:#fff;
+    }
+}
+
+ion-content{
+    ion-item{
+        --background: #3880ff;
+        --color: #fff;
+    }
+    
+    ion-button{
+        --background: #062f77;
+    }
+}

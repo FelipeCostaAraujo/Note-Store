@@ -1,0 +1,32 @@
+<ion-header>
+    <ion-button fill="clear" class="button" (click)="Voltar()" ><ion-icon name="arrow-back"></ion-icon>Voltar</ion-button>
+  <ion-title>
+    InTrack Watson Pizzaria
+  </ion-title>
+
+</ion-header>
+
+<ion-content class="content">
+
+  <div>
+
+    <div class="conversas">
+      <div *ngFor="let mensagens of lista">
+        <p *ngIf="!mensagens.user == '' " class="showed">{{mensagens.user}}</p>
+        <p class="mensagens">{{mensagens.bot}}</p>
+        <img *ngIf="mensagens.img" [src]="mensagens.img"/>
+      </div>
+    </div>
+  </div>
+
+</ion-content>
+<ion-footer>
+  <ion-item class="footer-item">
+      <ion-input type="text" placeholder="Digite aqui um text" [(ngModel)]="input"></ion-input>
+      <ion-button class="footer-button" size="default" (click)="enviar()">
+        <ion-icon name="send"></ion-icon>
+      </ion-button>
+  </ion-item>
+      
+    
+</ion-footer>

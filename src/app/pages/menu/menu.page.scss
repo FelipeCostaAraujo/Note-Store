@@ -1,0 +1,62 @@
+ion-content {
+    --background: url("/assets/fundo.png")  0 0/100% 100% no-repeat;
+}
+
+// ion-content.background{
+//     --background: url(../../../assets/fundo.png) 0 0/100% 100% no-repeat;
+// }
+ion-header{
+    background: #333;
+    ion-title{
+        --color:#fff;
+    }
+}
+
+
+.toolbar-title.toolbar-title-ios {
+    color:#488aff;
+}
+
+
+
+.header{
+    background: #333;
+}
+
+
+.rodape{
+    background: none;
+    
+}
+
+.menu{
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate( -50%,-50%);  
+    
+}
+
+.menu .ion-button{
+    background: rgba(5, 5, 5, 0.288);
+    display: block;
+    border-radius: 10px;
+    padding: 15px;
+    width: 185px;
+    margin: 35px;
+}
+.ion-button{
+    color:#fff;
+}
+
+.container{
+    width: 360px;
+    height: 600px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate( -50%,-50%);
+    color: white;
+    text-align: center;
+
+}

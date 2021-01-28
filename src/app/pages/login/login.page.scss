@@ -1,0 +1,48 @@
+ion-content {
+    --background: url("/assets/fundo.png") center / 100%;
+    .card-header{
+        --background:transparent;
+    }
+    .card{
+        
+        position: absolute;
+        width: 80%;
+        top: 46.5%;
+        left: 46.5%;
+        transform: translate(-50%,-50%);
+    }
+    .card-box{
+        background: #fff;
+    }
+    
+      .button{
+          width: 150px;  
+          --background:gray;
+          --background-activated:#000;
+      }
+      .card-button{
+        height: 100px;
+        text-align: center;
+        padding-top: 20px;
+      }
+      .toogle{
+        --background-checked:#333;
+      }
+}
+.rodape{
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 260px;
+    padding: 10px 0;
+    text-decoration: none;
+    text-align: center;
+    transition: 0.4s all;
+    color: white;
+
+    .button{
+        --color:#fff;
+        --color-activated:#fff;
+    }
+}
